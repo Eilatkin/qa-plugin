@@ -1,0 +1,35 @@
+{
+    "name": "ITE QA Extention",
+    "version": "0.9.1",
+    "description": "ITE QA Extention",
+    "homepage_url": "https://company.ru",
+    "manifest_version": 3,
+    "author": "Latkin Egor", 
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "ITE QA Extention",
+        "default_icon": {
+            "16": "./images/favicon.png",
+            "32": "./images/favicon.png",
+            "48": "./images/favicon.png",
+            "128": "./images/favicon.png"
+        }
+    },
+     "icons": {
+            "16": "./images/favicon.png",
+            "32": "./images/favicon.png",
+            "48": "./images/favicon.png",
+            "128": "./images/favicon.png"
+        },
+    "permissions": ["storage", "tabs", "activeTab", "scripting"],
+    "host_permissions": [
+        "*://jira.company.ru/*",
+        "*://tms.company.ru/*",
+        "*://*.ite.lan/*",
+        "*://*.sakura.lan/*"
+    ],
+    "web_accessible_resources": [{
+        "matches": ["<all_urls>"],
+        "resources": ["config.js","./modules/loader.js"]
+    }]
+}
